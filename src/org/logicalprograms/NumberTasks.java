@@ -2,7 +2,6 @@ package org.logicalprograms;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Scanner;
 
 public class NumberTasks {
 	public static void main(String[] args) {
@@ -111,19 +110,34 @@ public class NumberTasks {
 
 		String str = "madam";
 		String rev = "";
-		for (int i = str.length() - 1; i >= 0; i--) {
-			char h = str.charAt(i);
-			rev = rev + h;
+//		for (int i = str.length() - 1; i >= 0; i--) {
+//			char h = str.charAt(i);
+//			rev = rev + h;
+//		}
+//		System.out.println(rev);
+//
+//		// to check palindrome in String using equals in if condition
+//		if (str.equals(rev)) {
+//			System.out.println("palindrome");
+//
+//		} else {
+//			System.out.println("not palindrome");
+//		}
+
+//		for (int i = str.length() - 1; i >= 0; i--) {
+//			rev = rev + str.charAt(i);
+//		}
+//		System.out.println(rev);
+//
+//		for (int i = str.length() - 1; i >= 0; i--) {
+//			System.out.print(str.charAt(i));
+//		}
+
+		for (int i = 0; i < str.length(); i++) {
+			rev = str.charAt(i) + rev;
+
 		}
 		System.out.println(rev);
-
-		// to check palindrome in String using equals in if condition
-		if (str.equals(rev)) {
-			System.out.println("palindrome");
-
-		} else {
-			System.out.println("not palindrome");
-		}
 
 		System.out.println("====String reversal of each word using split====");
 		String name = "jiiva bob";
@@ -152,6 +166,7 @@ public class NumberTasks {
 		System.out.println("====pick vowels from word====");
 		String greet = "Welcome";
 		String result = "";
+
 		for (int i = 0; i < greet.length(); i++) {
 			char A = greet.charAt(i);
 			if (A == 'a' || A == 'e' || A == 'i' || A == 'o' || A == 'u') {
@@ -216,6 +231,7 @@ public class NumberTasks {
 		System.out.println(letter);
 
 		System.out.println("=====get the count of word======");
+
 		String line = "java is a java programming language";
 		String[] oneword = line.split(" ");
 		Map<String, Integer> wordcount = new HashMap<String, Integer>();
@@ -274,17 +290,15 @@ public class NumberTasks {
 
 		System.out.println("====user input sum the number====");
 
-		int kk, vj, group;
-		Scanner scan = new Scanner(System.in);
-		System.out.println("Enter the first number:");
-		kk = scan.nextInt();
-		System.out.println("Enter the second number:");
-		vj = scan.nextInt();
-		group = kk+vj;
-		System.out.println("the sum of two numbers kk and vj is:" + group);
+//		int kk, vj, group;
+//		Scanner scan = new Scanner(System.in);
+//		System.out.println("Enter the first number:");
+//		kk = scan.nextInt();
+//		System.out.println("Enter the second number:");
+//		vj = scan.nextInt();
+//		group = kk + vj;
+//		System.out.println("the sum of two numbers kk and vj is:" + group);
 
 	}
-
-
 
 }

@@ -35,7 +35,7 @@ public class ClassTask {
 
 		// reverse the number and palindrome
 		System.out.println("reverse the number and palindrome");
-		int num = 123, s = 0;
+		int num = 123;
 		int i, j = 0, d = num;
 		while (d > 0) {
 			i = d % 10;
@@ -51,7 +51,7 @@ public class ClassTask {
 		}
 		// amstrong number (sum of the cube of the each number)
 		int e = 153;
-		int k, l = 0, c = 0;
+		int k, l = 0;
 		while (e > 0) {
 			k = e % 10;
 			l = (k * k * k) + l;
@@ -63,28 +63,23 @@ public class ClassTask {
 		} else {
 			System.out.println("not amstrong number");
 		}
-		
-		//String reversal 
-		System.out.println("String reversal");
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 
+		// String reversal
+		System.out.println("String reversal");
+
+		String name = "hello world";
+		String emp = "";
+
+		for (int m = name.length() - 1; m >= 0; m--) {
+			char at = name.charAt(m);
+			emp = emp + at;
+		}
+		System.out.println(emp);
+		if (emp == name) {
+			System.out.println("palindrome");
+		} else {
+			System.out.println("Not palindrome");
+
+		}
 	}
 }
